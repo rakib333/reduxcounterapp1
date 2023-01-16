@@ -2,24 +2,18 @@
 
 import { DECREMENT, INCREMENT, RESET } from "../Constants/counterConstants"
 
-const incrementCounter = () => {
+export const incrementCounter = () => {
     return {
         type: INCREMENT
     }
 }
-const decrementCounter = () => {
+export const decrementCounter = () => {
     return {
         type: DECREMENT
     }
 }
-const resetCounter = () => {
+export const resetCounter = () => {
     return {
         type: RESET
     }
-}
-
-module.exports = {
-    incrementCounter,
-    decrementCounter,
-    resetCounter
 }
